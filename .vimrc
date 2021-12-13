@@ -22,9 +22,6 @@ augroup TweakColors " カラースキーム変更
   autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
   autocmd ColorScheme * highlight CursorWord guibg=#610f23 guifg=none ctermbg=52 ctermfg=none
   autocmd ColorScheme * highlight Cursor guibg=#8a1330 guifg=none ctermbg=52 ctermfg=none
-  " autocmd ColorScheme * highlight Conditional cterm=bold gui=bold
-  " autocmd ColorScheme * highlight Repeat cterm=bold gui=bold
-  " autocmd ColorScheme * highlight Exception cterm=bold gui=bold
 augroup END
 
 if has('vim_starting')
@@ -35,10 +32,6 @@ if has('vim_starting')
   " 置換モードで非点滅下線
   let &t_SR .= "\e[4 q"
 endif
-
-" indentLine
-let g:indentLine_char = '│'
-let g:indentLine_color_gui = '#3f4561' " for iceberg
 
 set showmatch "括弧入力時の対応する括弧を表示
 set number "行番号表示
