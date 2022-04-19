@@ -26,5 +26,5 @@ export LC_ALL="en_US.utf-8"
 
 # auto-ls cd
 cd () {
-  builtin cd "$@" && ls -AlFh
+  builtin cd "$@" && ls -AlFh --show-control-chars --color
 }
