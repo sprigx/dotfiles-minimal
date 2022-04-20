@@ -28,3 +28,4 @@ export LC_ALL="en_US.utf-8"
 cd () {
   builtin cd "$@" && ls -AlFh --show-control-chars --color
 }
+export PIPENV_VENV_IN_PROJECT=true
