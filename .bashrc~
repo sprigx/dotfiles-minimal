@@ -13,8 +13,8 @@ alias gps='git push origin HEAD'
 alias rbs="exec $SHELL -l"
 
 # prompt
-# IPADDR=`ifconfig | grep 192.168.2 | perl -nle '/(192\.168\.\d+.)(\d+)/ && print $2;'`
-PS1='\n\[\e[35m\][\t] \[\e[34m\]\w \[\e[90m\]\u@`hostname`  \[\e[35m\]\n❯\[\e[0m\] '
+IPADDR=`ifconfig | grep 192.168.2 | perl -nle '/(192\.168\.\d+.)(\d+)/ && print $2;'`
+PS1='\n\[\e[35m\][\t] \[\e[34m\]\w \[\e[90m\]\u@$IPADDR  \[\e[35m\]\n❯\[\e[0m\] '
 
 # Pyenv
 export PATH=$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH
