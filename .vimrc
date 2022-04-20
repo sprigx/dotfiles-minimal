@@ -147,7 +147,7 @@ set noswapfile " swapを作らない
 set mouse=a " マウスを使用
 set cmdheight=1 "コマンドウィンドウの高さ
 set backup
-" set backupdir=~/vimbackup
+set backupdir=~/vimbackup
 
 " completment
 set completeopt=menuone,noinsert
