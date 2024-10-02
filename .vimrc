@@ -12,17 +12,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 lang en_US.UTF-8
 
 colorscheme iceberg
-augroup TweakColors " カラースキーム変更
-  autocmd!
-  autocmd ColorScheme * highlight Visual ctermbg=216 ctermfg=234
-  autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
-  autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
-  autocmd ColorScheme * highlight LineNr ctermbg=none guibg=none
-  autocmd ColorScheme * highlight Folded ctermbg=none guibg=none
-  autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
-  autocmd ColorScheme * highlight CursorWord guibg=#610f23 guifg=none ctermbg=52 ctermfg=none
-  autocmd ColorScheme * highlight Cursor guibg=#8a1330 guifg=none ctermbg=52 ctermfg=none
-augroup END
+set background=dark
 
 if has('vim_starting')
   " 挿入モードで非点滅縦棒
@@ -46,9 +36,6 @@ let g:vim_json_syntax_conceal = 0
 
 autocmd FileType qf setlocal wrap
 
-" 不可視文字の表示
-hi NonText    ctermbg=None ctermfg=59 guibg=NONE guifg=None
-hi SpecialKey ctermbg=None ctermfg=59 guibg=NONE guifg=None
 set list
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
 
@@ -160,7 +147,7 @@ set noswapfile " swapを作らない
 set mouse=a " マウスを使用
 set cmdheight=1 "コマンドウィンドウの高さ
 set backup
-" set backupdir=~/vimbackup
+set backupdir=~/vimbackup
 
 " completment
 set completeopt=menuone,noinsert
